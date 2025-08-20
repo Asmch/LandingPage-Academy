@@ -12,7 +12,7 @@ export const BentoGrid = ({
     <div
       className={cn(
         "mx-auto grid max-w-7xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3 " +
-          "gap-3 sm:gap-4 auto-rows-[10rem] sm:auto-rows-[12rem] md:auto-rows-[16rem] lg:auto-rows-[18rem] px-4",
+          "gap-3 sm:gap-4 lg:gap-5 auto-rows-[minmax(11rem,auto)] sm:auto-rows-[minmax(13rem,auto)] md:auto-rows-[minmax(16rem,auto)] lg:auto-rows-[minmax(18rem,auto)] px-2 sm:px-4 min-h-0",
         className
       )}
     >
@@ -41,7 +41,7 @@ export const BentoGridItem = ({
       className={cn(
         "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 " +
           "rounded-xl border border-neutral-200 bg-white p-3 sm:p-4 md:p-5 " +
-          "transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
+          "transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none overflow-hidden min-h-0",
         className
       )}
     >
@@ -52,18 +52,18 @@ export const BentoGridItem = ({
           width={800}
           height={450}
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-          className="rounded-xl object-cover w-full h-32 sm:h-36 md:h-40 lg:h-48 mb-2"
+          className="w-full aspect-video h-auto rounded-xl object-cover mb-2 overflow-hidden"
         />
       ) : (
         header
       )}
 
-      <div className="transition duration-200 group-hover/bento:translate-x-2">
+      <div className="transition duration-200 group-hover/bento:translate-x-1 sm:group-hover/bento:translate-x-2 min-h-0">
         {icon}
-        <div className="mt-2 mb-2 font-sans font-bold text-neutral-600 dark:text-neutral-200 text-sm sm:text-base md:text-lg">
+        <div className="mt-2 mb-2 font-sans font-bold text-neutral-600 dark:text-neutral-200 text-sm sm:text-base md:text-lg break-words whitespace-normal text-balance">
           {title}
         </div>
-        <div className="font-sans text-[11px] sm:text-xs md:text-sm font-normal text-neutral-600 dark:text-neutral-300">
+        <div className="font-sans text-[11px] sm:text-xs md:text-sm font-normal text-neutral-600 dark:text-neutral-300 break-words whitespace-normal text-pretty">
           {description}
         </div>
       </div>

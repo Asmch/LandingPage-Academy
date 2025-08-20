@@ -40,3 +40,4 @@ export function AnimatedTestimonialsDemo() {
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
 }
+

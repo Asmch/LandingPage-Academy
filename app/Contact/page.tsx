@@ -1,11 +1,9 @@
-// src/pages/Contact.tsx
-
 import React from "react";
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 py-8 sm:px-6 sm:py-12">
-      <div className="w-full max-w-3xl bg-gray-900 rounded-2xl shadow-lg p-8">
+      <div className="w-full max-w-3xl bg-gray-900 rounded-2xl shadow-lg p-6 sm:p-8">
         {/* Heading */}
         <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">Contact Us</h1>
         <p className="text-gray-300 text-center mb-8">
@@ -14,10 +12,11 @@ export default function Contact() {
         </p>
 
         {/* Form */}
-        <form className="space-y-4 sm:space-y-6">
+        <form className="space-y-4 sm:space-y-6" aria-label="Contact form">
           <div>
-            <label className="block text-sm font-medium mb-2">Name</label>
+            <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
             <input
+              id="name"
               type="text"
               placeholder="Your Name"
               className="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
@@ -25,8 +24,9 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
             <input
+              id="email"
               type="email"
               placeholder="you@example.com"
               className="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
@@ -34,8 +34,9 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">Message</label>
+            <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
             <textarea
+              id="message"
               rows={5}
               placeholder="Write your message..."
               className="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
@@ -59,3 +60,4 @@ export default function Contact() {
     </div>
   );
 }
+

@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -20,8 +20,8 @@ export const InfiniteMovingCards = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
     addAnimation();
@@ -32,7 +32,7 @@ export const InfiniteMovingCards = ({
       const scrollerContent = Array.from(scrollerRef.current.children);
 
       scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
+        const duplicatedItem = (item as Element).cloneNode(true);
         if (scrollerRef.current) {
           scrollerRef.current.appendChild(duplicatedItem);
         }
@@ -115,3 +115,4 @@ export const InfiniteMovingCards = ({
     </div>
   );
 };
+

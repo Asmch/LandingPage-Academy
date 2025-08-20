@@ -9,3 +9,4 @@ export function BackgroundBeamsDemo() {
     </div>
   );
 }
+

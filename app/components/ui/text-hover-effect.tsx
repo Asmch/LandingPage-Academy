@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export const TextHoverEffect = ({
   text,
@@ -93,7 +93,7 @@ export const TextHoverEffect = ({
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.3"
-        className="fill-transparent stroke-neutral-200 font-[helvetica] text-3xl sm:text-5xl md:text-7xl font-bold dark:stroke-neutral-400 "
+        className="fill-transparent stroke-neutral-200 font-[helvetica] text-3xl sm:text-5xl md:text-7xl font-bold dark:stroke-neutral-400"
         style={{ opacity: hovered ? 0.7 : 0 }}
       >
         {text}
@@ -132,3 +132,4 @@ export const TextHoverEffect = ({
     </svg>
   );
 };
+

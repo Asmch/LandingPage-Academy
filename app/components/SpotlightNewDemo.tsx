@@ -5,9 +5,10 @@ import { BentoGridDemo } from "./BentoGridDemo";
 
 export function SpotlightNewDemo() {
   return (
-    <div className="h-[40rem] sm:h-[50rem] md:h-[60rem] lg:h-[80rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] xl:min-h-[90vh] w-full rounded-md flex items-center justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight />
       <BentoGridDemo/>
     </div>
   );
 }
+

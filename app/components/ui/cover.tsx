@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect, useId, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
-import { useRef } from "react";
+
+import { useEffect, useState, useRef, useId } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { SparklesCore } from "../ui/sparkles";
 
@@ -160,6 +160,7 @@ export const Beam = ({
   width?: number;
 } & React.ComponentProps<typeof motion.svg>) => {
   const id = useId();
+
 
   return (
     <motion.svg

@@ -24,7 +24,7 @@ export function NavbarDemo() {
   const router = useRouter();
 
   return (
-    <div className="relative w-full z-200">
+    <div className="relative w-full z-[200]">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -98,3 +98,4 @@ export function NavbarDemo() {
     </div>
   );
 }
+

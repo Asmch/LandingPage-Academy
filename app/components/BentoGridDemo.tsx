@@ -13,9 +13,9 @@ import { TextHoverEffectDemo } from "./TextHoverEffectDemo";
 
 export function BentoGridDemo() {
   return (
-    <div className="px-4">
+    <div className="relative z-[20] px-2 sm:px-4">
       <TextHoverEffectDemo />
-      <BentoGrid className="max-w-5xl mx-auto mt-10">
+      <BentoGrid className="max-w-6xl mx-auto mt-6 sm:mt-10">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}

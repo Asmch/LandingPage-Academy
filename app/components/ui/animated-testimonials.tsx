@@ -3,7 +3,7 @@
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { useEffect, useState, useMemo ,useCallback} from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { SparklesPreview } from "../SparklesPreview";
 
 type Testimonial = {
@@ -22,11 +22,11 @@ export const AnimatedTestimonials = ({
   const [active, setActive] = useState(0);
 
 const handleNext = useCallback(() => {
-  setActive((prev) => (prev + 1) % testimonials.length);
+  setActive((prev: number) => (prev + 1) % testimonials.length);
 }, [testimonials.length]);
 
 const handlePrev = useCallback(() => {
-  setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  setActive((prev: number) => (prev - 1 + testimonials.length) % testimonials.length);
 }, [testimonials.length]);
 
   const isActive = (index: number) => {
@@ -51,10 +51,10 @@ useEffect(() => {
 
 
   return (
-    <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12 mt-5">
-      <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+    <div className="mx-auto max-w-sm px-4 py-10 sm:py-14 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12 mt-2">
+      <div className="relative grid grid-cols-1 gap-10 sm:gap-14 md:grid-cols-2">
         <div>
-          <div className="relative h-80 w-full">
+          <div className="relative h-64 sm:h-72 md:h-80 w-full">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -100,7 +100,7 @@ useEffect(() => {
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex flex-col justify-between py-4">
+        <div className="flex flex-col justify-between py-2">
           <motion.div
             key={active}
             initial={{
@@ -120,13 +120,13 @@ useEffect(() => {
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-black dark:text-white">
+            <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            <p className="text-xs sm:text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300">
+            <motion.p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-gray-500 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}

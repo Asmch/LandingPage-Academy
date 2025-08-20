@@ -141,3 +141,4 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     />
   );
 };
+

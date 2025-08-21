@@ -2,6 +2,9 @@
 
 Academy Landing Page is a modern, responsive web application designed to help learners kickstart their tech careers. This project showcases interactive UI components, animated effects, and a clean layout to highlight various tech roles and the Academy’s offerings.
 
+## 🚀 Deployed Link
+[Landing Page Academy](https://landing-page-academy-qoza1w7rg.vercel.app)
+
 ## Features
 
 - **Animated FlipWords Hero:** Dynamic hero section with animated role titles (Full-Stack Developer, Data Scientist, etc.).

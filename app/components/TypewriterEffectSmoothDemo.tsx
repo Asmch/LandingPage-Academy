@@ -1,8 +1,7 @@
 "use client";
 import { AnimatedTestimonialsDemo } from "./AnimatedTestimonialsDemo";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React from 'react';
 import { InfiniteMovingCardsDemo } from "./InfiniteMovingCardsDemo";
 import { CoverDemo } from "./CoverDemo";
 import Link from "next/link";

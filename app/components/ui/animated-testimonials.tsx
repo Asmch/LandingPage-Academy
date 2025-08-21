@@ -4,7 +4,6 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import React, { useEffect, useState, useCallback } from "react";
-import { SparklesPreview } from "../SparklesPreview";
 
 type Testimonial = {
   quote: string;

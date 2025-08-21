@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Academy Landing Page
 
-## Getting Started
+Academy Landing Page is a modern, responsive web application designed to help learners kickstart their tech careers. This project showcases interactive UI components, animated effects, and a clean layout to highlight various tech roles and the Academy’s offerings.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Animated FlipWords Hero:** Dynamic hero section with animated role titles (Full-Stack Developer, Data Scientist, etc.).
+- **Responsive Design:** Mobile-first layout using Tailwind CSS for seamless experience across devices.
+- **Reusable Components:** Modular React components for easy maintenance and scalability.
+- **Modern UI Elements:** Includes tooltips, typewriter effects, and bento grid layouts.
+- **Dark Mode Support:** Adapts to user’s theme preference.
+- **Easy Customization:** Well-structured codebase for quick edits and feature additions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js** – React framework for server-side rendering and routing.
+- **React** – Component-based UI library.
+- **Tailwind CSS** – Utility-first CSS framework for rapid styling.
+- **Framer Motion** – Animation library for smooth transitions.
+- **TypeScript** – Type safety and better developer experience.
+- **Tabler Icons** – Modern SVG icon set.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Folder Structure
 
-## Learn More
+- `app/` – Main application pages and layout.
+- `components/` – Reusable UI components (e.g., FlipWords, BentoGrid).
+- `public/` – Static assets (images, icons).
+- `lib/` – Utility functions and helpers.
+- `types/` – TypeScript type definitions.
 
-To learn more about Next.js, take a look at the following resources:
+## Setup & Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/academy-landing-page.git
+   cd academy-landing-page
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Open in browser:**  
+   Visit [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Pull requests and suggestions are welcome! Please open an issue for any bugs or feature requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License.
